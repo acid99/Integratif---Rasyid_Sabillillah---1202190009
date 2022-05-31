@@ -3,9 +3,6 @@
 **1202190009**
 <h1 align="center"> Laravel 8 on Windows </h1>
 
-***
-
-
 # Installation is easy!
 <details> <summary> Required XAMPP for Windows</summary>
 
