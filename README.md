@@ -3,12 +3,14 @@
 **1202190009**
 <h1 align="center"> Laravel 8 on Windows </h1>
 
+
 # Installation is easy!
 <details> <summary> Required XAMPP for Windows</summary>
 
 ### Install from www.apachefriends.org
 - [Installer XAMPP](https://www.apachefriends.org/xampp-files/8.1.6/xampp-windows-x64-8.1.6-0-VS16-installer.exe)    `Windows 2008, 2012, Vista, 7, 8 (Important: XP or 2003 not supported`
-**Component Install**: MySQL, phpMyAdmin
+    **Component Install**: MySQL, phpMyAdmin
+
 </details>
 
 <details> <summary> Required Composer for Windows</summary>
