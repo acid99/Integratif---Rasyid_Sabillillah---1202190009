@@ -1,8 +1,5 @@
 **Rasyid Sabillillah | IT-0202 | 1202190009**
 
-
-
-
 ## Phase 1  | How To Install Laravel 9 on Windows
 
 <details> <summary> Required XAMPP for Windows</summary>
@@ -67,7 +64,7 @@
 
 ## Phase 2  | Rss and Database 
 
-- Open XAMPP Control Panel, and start the Module MySQL and Apache
+- Open XAMPP Control Panel, and start the Module MySQL and Apache.
     <p align="center"><img src= "https://github.com/acid99/Integratif--Rasyid_Sabillillah--1202190009-/blob/main/assets/progress%202/step/Screenshot_0.png?raw=true"></p>
 - Create Database with project_name or anything you want.
 - Dont forget to run laravel project with code on terminal with path C:\xampp\htdocs\project_name, dont close that terminal.
@@ -80,13 +77,17 @@
     ```
     php artisan migrate
     ```  
+    if you getting error, solve first, and run with
+    ```
+    php artisan migrate:fresh
+    ```  
 - If you don't find an error in the terminal, it means that the laravel project  has been connected to your database.
-- Create file Rss and News Table on Database
+- Create file Rss and News Table on Database.
     ```
    php artisan make:migration create_rss_table
    php artisan make:migration create_news_table
     ```  
-- After that, open that files on your laravel project folder (database/migrations/), and changes like this.
+- After that, open that files on your laravel project folder (database/migrations/), and changes like this to change the table structure that has been created.
     <p align="center"><img src= "https://github.com/acid99/Integratif--Rasyid_Sabillillah--1202190009-/blob/main/assets/progress%202/step/Screenshot_2.png?raw=true"></p>
     <p align="center"><img src= "https://github.com/acid99/Integratif--Rasyid_Sabillillah--1202190009-/blob/main/assets/progress%202/step/Screenshot_3.png?raw=true"></p>
 - Open DatabaseSeeder.php and RssSeeder.php on database/seeders, and changes like this for fill in website on table rss at database.
