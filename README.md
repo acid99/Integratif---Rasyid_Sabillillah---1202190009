@@ -1,64 +1,134 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
+**Rasyid Sabillillah | IT-0202 | 1202190009**
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
 
-## About Laravel
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## Phase 1  | How To Install Laravel 9 on Windows
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+<details> <summary> Required XAMPP for Windows</summary>
 
-## Learning Laravel
+### Install from www.apachefriends.org
+- [Installer XAMPP](https://www.apachefriends.org/xampp-files/8.1.6/xampp-windows-x64-8.1.6-0-VS16-installer.exe)    `Windows 2008, 2012, Vista, 7, 8 (Important: XP or 2003 not supported`
+    
+    **Component Install**: MySQL, phpMyAdmin
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+</details>
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+<details> <summary> Required Composer for Windows</summary>
 
-## Laravel Sponsors
+- [Installer Composer](https://getcomposer.org/Composer-Setup.exe)
+- After downloading the Composer file, open the file and follow the installation instructions below: 
+   <p align="center"><img src= "https://github.com/acid99/Integratif-Rasyid_Sabillillah-1202190009/blob/main/assets/laravel/Screenshot_1.png?raw=true"></p>
+   First, a page like the one in the image above will appear. Click Next to continue with the installation process.
+- Make sure to select the installation location Composer running at C:\xampp\php\php.exe. Click Next if the php file location is correct.
+   <p align="center"><img src= "https://github.com/acid99/Integratif-Rasyid_Sabillillah-1202190009/blob/main/assets/laravel/Screenshot_2.png?raw=true"></p>
+- After that, you'll be asked if you want to utilize a proxy or not. Click the button and input your proxy URL if you want to use one. If you don't wish to use a proxy, proceed with the installation by clicking Next.
+   <p align="center"><img src= "https://github.com/acid99/Integratif-Rasyid_Sabillillah-1202190009/blob/main/assets/laravel/Screenshot_3.png?raw=true"></p>
+- Next, double-check that the installation process is operating in the correct directory, which is C:xamppphpphp.exe. If everything seems good, click Install. The next screen displays a notification that the Windows environment has changed. This modification makes it possible to run Composer from the Command Prompt.
+   <p align="center"><img src= "https://github.com/acid99/Integratif-Rasyid_Sabillillah-1202190009/blob/main/assets/laravel/Screenshot_4.png?raw=true"></p>
+- When the installation is finished, close the Composer installation window by clicking Finish.
+   <p align="center"><img src= "https://github.com/acid99/Integratif-Rasyid_Sabillillah-1202190009/blob/main/assets/laravel/Screenshot_5.png?raw=true"></p>
+- Following the completion of the Composer installation, use the Command Prompt to verify the Composer installation. The key is to press Win + R, type cmd, and then click Ok. 
+   <p align="center"><img src= "https://github.com/acid99/Integratif-Rasyid_Sabillillah-1202190009/blob/main/assets/laravel/cmd.png?raw=true"></p>
+- After that, you'll be taken to the Command Prompt window. To see if the installation was successful, run the command below.
+   <p align="center"><img src= "https://github.com/acid99/Integratif-Rasyid_Sabillillah-1202190009/blob/main/assets/laravel/Screenshot_6.png?raw=true"></p>
+   Your installation was successful if it looks like the image above.
+</details>
+<br>
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+- **Make sure you have installed composer and xampp.**
+- Entering the Command Prompt is the first step in installing Laravel. The trick is to press Win+R, type cmd, and then press OK.
+  <p align="center"><img src= "https://github.com/acid99/Integratif-Rasyid_Sabillillah-1202190009/blob/main/assets/laravel/cmd.png?raw=true"></p>
+- Navigate to the file server directory in Command Prompt or Terminal before installing Laravel. On XAMPP, the file server is located in the xampp/htdocs directory by default. To get to the htdocs directory, type this command in the Command Prompt window.
+    ```
+    cd \xampp\htdocs 
+    ```  
+    <p align="center"><img src= "https://github.com/acid99/Integratif-Rasyid_Sabillillah-1202190009/blob/main/assets/laravel/Screenshot_7.png?raw=true"></p>
+- Before you install Laravel, go to the file server directory using Command Prompt or Terminal. The xampp/htdocs directory is the default location for the file server in XAMPP. To get to the htdocs directory, type this command in the Command Prompt window.
+    ```
+    composer create-project --prefer-dist laravel/laravel project_name 
+    ```  
+    Composer will begin the process of gathering data and installing Laravel into the directory you chose if the command was successfully entered. Ensure that your internet connection is reliable so that the Laravel data retrieval procedure goes without a hitch.
+    <p align="center"><img src= "https://github.com/acid99/Integratif-Rasyid_Sabillillah-1202190009/blob/main/assets/laravel/Screenshot_8.png?raw=true"></p>
+- After the Laravel file download is complete, a new folder with the same name as the project name you provided in the /xampp/htdocs folder will appear in the file server directory.
+  <p align="center"><img src= "https://github.com/acid99/Integratif-Rasyid_Sabillillah-1202190009/blob/main/assets/laravel/Screenshot_9.png?raw=true"></p>
+- Navigate to the directory you created earlier in Command Prompt or Terminal to confirm that Laravel is successfully installed and ready to use.
+    ```
+    cd project_name
+    ```  
+    Then, at the Command Prompt or Terminal, type the following command:
+    ```
+    php artisan serve
+    ```  
+    <p align="center"><img src= "https://github.com/acid99/Integratif-Rasyid_Sabillillah-1202190009/blob/main/assets/laravel/Screenshot_10.png?raw=true"></p>
+- The next step is to open the link supplied by Laravel if it indicates Laravel development server started in the Command Prompt or Terminal. By default, you'll be sent to 127.0.0.1:8000, which is the server address. A homepage with Laravel writing in the center will appear later, as illustrated in the image below:
+  <p align="center"><img src= "https://github.com/acid99/Integratif-Rasyid_Sabillillah-1202190009/blob/main/assets/laravel/Screenshot_11.png?raw=true"></p>
+  If it looks like the image above, your Laravel installation was successful^^
 
-### Premium Partners
+## Phase 2  | Rss and Database 
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
+- Open XAMPP Control Panel, and start the Module MySQL and Apache
+    <p align="center"><img src= "https://github.com/acid99/Integratif--Rasyid_Sabillillah--1202190009-/blob/main/assets/progress%202/step/Screenshot_0.png?raw=true"></p>
+- Create Database with project_name or anything you want.
+- Dont forget to run laravel project with code on terminal with path C:\xampp\htdocs\project_name, dont close that terminal.
+    ```
+    php artisan serve
+    ```  
+- Open and edit file .env on your folder project_name, change DB_DATABASE with your database created before.
+    <p align="center"><img src= "https://github.com/acid99/Integratif--Rasyid_Sabillillah--1202190009-/blob/main/assets/progress%202/step/Screenshot_1.png?raw=true"></p>
+- Open other Terminal. And type like this, for make sure connect your laravel project with database. 
+    ```
+    php artisan migrate
+    ```  
+- If you don't find an error in the terminal, it means that the laravel project  has been connected to your database.
+- Create file Rss and News Table on Database
+    ```
+   php artisan make:migration create_rss_table
+   php artisan make:migration create_news_table
+    ```  
+- After that, open that files on your laravel project folder (database/migrations/), and changes like this.
+    <p align="center"><img src= "https://github.com/acid99/Integratif--Rasyid_Sabillillah--1202190009-/blob/main/assets/progress%202/step/Screenshot_2.png?raw=true"></p>
+    <p align="center"><img src= "https://github.com/acid99/Integratif--Rasyid_Sabillillah--1202190009-/blob/main/assets/progress%202/step/Screenshot_3.png?raw=true"></p>
+- Open DatabaseSeeder.php and RssSeeder.php on database/seeders, and changes like this for fill in website on table rss at database.
+    <p align="center"><img src= "https://github.com/acid99/Integratif--Rasyid_Sabillillah--1202190009-/blob/main/assets/progress%202/step/Screenshot_4.png?raw=true"></p>
+- Run command on terminal like this, for register the files changed before.
+    ```
+    php artisan db:seed
+    ```  
+- And then it will appear as below (**register db seed site one by one**)
+      <p align="center"><img src= "https://github.com/acid99/Integratif--Rasyid_Sabillillah--1202190009-/blob/main/assets/progress%202/step/Screenshot_4_1.png?raw=true"></p>
+- Create Model Rss with seed and controller, and create Model News with controller,
+    ```
+   php artisan make:model Rss -seed --controller
+   php artisan make:model News --controller
+    ```
+- Dont forget change file model Rss and News on app/Models, for what kind of table to on database
+    <p align="center"><img src= "https://github.com/acid99/Integratif--Rasyid_Sabillillah--1202190009-/blob/main/assets/progress%202/step/Screenshot_6.png?raw=true"></p>
+    <p align="center"><img src= "https://github.com/acid99/Integratif--Rasyid_Sabillillah--1202190009-/blob/main/assets/progress%202/step/Screenshot_5.png?raw=true"></p>
+- Edit file NewsController.php on app/Http/Controllers, for parsing xml object on our database.
+    <p align="center"><img src= "https://github.com/acid99/Integratif--Rasyid_Sabillillah--1202190009-/blob/main/assets/progress%202/step/Screenshot_7.png?raw=true"></p>
+- Edit file route web.php on routes folder, for to be able open a link based on the rss id that we registered before.
+    <p align="center"><img src= "https://github.com/acid99/Integratif--Rasyid_Sabillillah--1202190009-/blob/main/assets/progress%202/step/Screenshot_8.png?raw=true"></p>
+- Check on browser sites one by one.
+- Site Bola ([click here](https://www.bola.net/feed/))
+  Aggregate/1
+  <p align="center"><img src= "https://github.com/acid99/Integratif--Rasyid_Sabillillah--1202190009-/blob/main/assets/progress%202/Screenshot_1.png?raw=true"></p>
+  Rss_id/1
+  <p align="center"><img src= "https://github.com/acid99/Integratif--Rasyid_Sabillillah--1202190009-/blob/main/assets/progress%202/Screenshot_2.png?raw=true"></p>
 
-## Contributing
+- Site CNBC Indonesia ([click here](https://www.cnbcindonesia.com/market/rss/))
+  Aggregate/2
+  <p align="center"><img src= "https://github.com/acid99/Integratif--Rasyid_Sabillillah--1202190009-/blob/main/assets/progress%202/Screenshot_3.png?raw=true"></p>
+  Rss_id/2
+  <p align="center"><img src= "https://github.com/acid99/Integratif--Rasyid_Sabillillah--1202190009-/blob/main/assets/progress%202/Screenshot_4.png?raw=true"></p>
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+- Site Kumparan ([click here](https://lapi.kumparan.com/v2.0/rss/))
+  Aggregate/3
+  <p align="center"><img src= "https://github.com/acid99/Integratif--Rasyid_Sabillillah--1202190009-/blob/main/assets/progress%202/Screenshot_5.png?raw=true"></p>
+  Rss_id/3
+  <p align="center"><img src= "https://github.com/acid99/Integratif--Rasyid_Sabillillah--1202190009-/blob/main/assets/progress%202/Screenshot_6.png?raw=true"></p>
 
-## Code of Conduct
+- 3 Sites in Database Table News
+  <p align="center"><img src= "https://github.com/acid99/Integratif--Rasyid_Sabillillah--1202190009-/blob/main/assets/progress%202/Screenshot_7.png?raw=true"></p>
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
 
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
