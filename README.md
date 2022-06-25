@@ -96,14 +96,14 @@
     ```
     php artisan db:seed
     ```  
-- And then it will appear as below (**register db seed site one by one**)
+- And then it will appear as below (**register db seed all sites one by one**).
       <p align="center"><img src= "https://github.com/acid99/Integratif--Rasyid_Sabillillah--1202190009-/blob/main/assets/progress%202/step/Screenshot_4_1.png?raw=true"></p>
-- Create Model Rss with seed and controller, and create Model News with controller,
+- Create Model Rss with seed and controller, and create Model News with controller.
     ```
    php artisan make:model Rss -seed --controller
    php artisan make:model News --controller
     ```
-- Dont forget change file model Rss and News on app/Models, for what kind of table to on database
+- Dont forget change file model Rss and News on app/Models, for what kind of table to on database.
     <p align="center"><img src= "https://github.com/acid99/Integratif--Rasyid_Sabillillah--1202190009-/blob/main/assets/progress%202/step/Screenshot_6.png?raw=true"></p>
     <p align="center"><img src= "https://github.com/acid99/Integratif--Rasyid_Sabillillah--1202190009-/blob/main/assets/progress%202/step/Screenshot_5.png?raw=true"></p>
 - Edit file NewsController.php on app/Http/Controllers, for parsing xml object on our database.
@@ -111,25 +111,25 @@
 - Edit file route web.php on routes folder, for to be able open a link based on the rss id that we registered before.
     <p align="center"><img src= "https://github.com/acid99/Integratif--Rasyid_Sabillillah--1202190009-/blob/main/assets/progress%202/step/Screenshot_8.png?raw=true"></p>
 - Check on browser sites one by one.
-- Site Bola ([click here](https://www.bola.net/feed/))
+- Site Bola ([click here](https://www.bola.net/feed/)).
   Aggregate/1
   <p align="center"><img src= "https://github.com/acid99/Integratif--Rasyid_Sabillillah--1202190009-/blob/main/assets/progress%202/Screenshot_1.png?raw=true"></p>
   Rss_id/1
   <p align="center"><img src= "https://github.com/acid99/Integratif--Rasyid_Sabillillah--1202190009-/blob/main/assets/progress%202/Screenshot_2.png?raw=true"></p>
 
-- Site CNBC Indonesia ([click here](https://www.cnbcindonesia.com/market/rss/))
+- Site CNBC Indonesia ([click here](https://www.cnbcindonesia.com/market/rss/)).
   Aggregate/2
   <p align="center"><img src= "https://github.com/acid99/Integratif--Rasyid_Sabillillah--1202190009-/blob/main/assets/progress%202/Screenshot_3.png?raw=true"></p>
   Rss_id/2
   <p align="center"><img src= "https://github.com/acid99/Integratif--Rasyid_Sabillillah--1202190009-/blob/main/assets/progress%202/Screenshot_4.png?raw=true"></p>
 
-- Site Kumparan ([click here](https://lapi.kumparan.com/v2.0/rss/))
+- Site Kumparan ([click here](https://lapi.kumparan.com/v2.0/rss/)).
   Aggregate/3
   <p align="center"><img src= "https://github.com/acid99/Integratif--Rasyid_Sabillillah--1202190009-/blob/main/assets/progress%202/Screenshot_5.png?raw=true"></p>
   Rss_id/3
   <p align="center"><img src= "https://github.com/acid99/Integratif--Rasyid_Sabillillah--1202190009-/blob/main/assets/progress%202/Screenshot_6.png?raw=true"></p>
 
-- 3 Sites in Database Table News
+- 3 Sites in Database Table News.
   <p align="center"><img src= "https://github.com/acid99/Integratif--Rasyid_Sabillillah--1202190009-/blob/main/assets/progress%202/Screenshot_7.png?raw=true"></p>
 
 
