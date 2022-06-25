@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\NewsController;
+
 use Vedmant\FeedReader\Facades\FeedReader;
 
 /*
@@ -60,5 +62,6 @@ Route::get('/', function () {
 //         return response()->json(['data'=>$result,'message' => 'Done',], 200);
 
 // });
-Route::get('/read-rss', [App\Http\Controllers\AgregatController::class, 'index'])->name('agregats');
+// Route::get('/read-rss', [App\Http\Controllers\AgregatController::class, 'index'])->name('agregats');
+Route::get('/aggregrate/{rss_id}', [NewsController::class, 'aggregrate']);
 
