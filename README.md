@@ -138,7 +138,7 @@
 
 ## Phase 3  | Homepage
 
-- Site Bola from rss_id/1 **change** to CNBC Indonesia Technology (same rss_id/1), because images url from Site Bola not even showing at all from homepage.
+- Site Bola from rss_id/1 **changed** to CNBC Indonesia Technology (same rss_id/1), because images url from Site Bola not even showing at all from homepage.
   
 - Make 4 Files in resources/views, with name welcome.blade.php, tech.blade.php, market.blade.php, and berita.blade.php.
   <p align="center"><img src= "https://github.com/acid99/Integratif--Rasyid_Sabillillah--1202190009-/blob/main/assets/progress%203/Screenshot_1.png?raw=true"></p>
@@ -155,14 +155,14 @@
 - Edit File in directory app/routes/web.php, like images below (for pages address)
   <p align="center"><img src= "https://github.com/acid99/Integratif--Rasyid_Sabillillah--1202190009-/blob/main/assets/progress%203/Screenshot_9.png?raw=true"></p>
 
-- Homepage from 127.0.0.0/8000
+- Homepage from 127.0.0.0:8000
   <p align="center"><img src= "https://github.com/acid99/Integratif--Rasyid_Sabillillah--1202190009-/blob/main/assets/progress%203/home.png?raw=true"></p>
 
-- CNBC Indonesia Technology from 127.0.0.0/8000/tech
+- CNBC Indonesia Technology from 127.0.0.0:8000/tech
   <p align="center"><img src= "https://github.com/acid99/Integratif--Rasyid_Sabillillah--1202190009-/blob/main/assets/progress%203/tech.png?raw=true"></p>
 
-- CNBC Indonesia Market from 127.0.0.0/8000/market
+- CNBC Indonesia Market from 127.0.0.0:8000/market
   <p align="center"><img src= "https://github.com/acid99/Integratif--Rasyid_Sabillillah--1202190009-/blob/main/assets/progress%203/market.png?raw=true"></p>
 
-- Kumparan from 127.0.0.0/8000/berita
+- Kumparan from 127.0.0.0:8000/berita
   <p align="center"><img src= "https://github.com/acid99/Integratif--Rasyid_Sabillillah--1202190009-/blob/main/assets/progress%203/berita.png?raw=true"></p>
