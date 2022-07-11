@@ -16,8 +16,8 @@ class RssSeeder extends Seeder
     public function run()
     {
         Rss::create([
-            // 'name' => 'Bola Dot Net',
-            // 'url' => 'https://www.bola.net/feed/'
+            // 'name' => 'CNBC Tech',
+            // 'url' => 'https://www.cnbcindonesia.com/tech/rss'
             // 'name' => 'CNBC Indonesia',
             // 'url' => 'https://www.cnbcindonesia.com/market/rss/'
             'name' => 'Kumparan',
