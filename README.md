@@ -166,3 +166,27 @@
 
 - Kumparan from 127.0.0.0:8000/berita
   <p align="center"><img src= "https://github.com/acid99/Integratif--Rasyid_Sabillillah--1202190009-/blob/main/assets/progress%203/berita.png?raw=true"></p>
+
+## Phase 4  | Pokemon API
+
+- Search pokemon name "bulbasaur" (get pokemon data from [pokeapi](https://pokeapi.co/))
+  <p align="center"><img src= "https://github.com/acid99/Integratif--Rasyid_Sabillillah--1202190009-/blob/main/assets/progress%204/Screenshot_1.png?raw=true?raw=true"></p>
+
+- Search pokemon name "squirtle"
+  <p align="center"><img src= "https://github.com/acid99/Integratif--Rasyid_Sabillillah--1202190009-/blob/main/assets/progress%204/Screenshot_2.png?raw=true?raw=true"></p>
+
+  ## Phase 5  | Database to Json
+
+- Create files in app/Http/Controllers, with name JsonController.php (contains about database to json).
+  <p align="center"><img src= "https://github.com/acid99/Integratif--Rasyid_Sabillillah--1202190009-/blob/main/assets/progress%205/Screenshot_2.png?raw=true?raw=true"></p>
+
+- Don't forget to register it on web.php on routes folder, for to be able open json controller.
+  <p align="center"><img src= "https://github.com/acid99/Integratif--Rasyid_Sabillillah--1202190009-/blob/main/assets/progress%205/Screenshot_3.png?raw=true?raw=true"></p>
+
+- Database to json, and give it to friend.
+  <p align="center"><img src= "https://github.com/acid99/Integratif--Rasyid_Sabillillah--1202190009-/blob/main/assets/progress%205/Screenshot_1.png?raw=true?raw=true"></p>  
+
+  ## Last Phase  | Json from Friend
+
+- Friend RSS(1,2,3 or mix) news page view (get from json friend)
+  <p align="center"><img src= "https://github.com/acid99/Integratif--Rasyid_Sabillillah--1202190009-/blob/main/assets/last%20progress/Screenshot_1.png?raw=true?raw=true"></p>  
