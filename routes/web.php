@@ -37,3 +37,11 @@ Route::get('/tech', function () {
     return view('tech');
 });
 Route::get('/tech', [App\Http\Controllers\TcController::class, 'index']);
+
+Route::get('/poke', function () {
+    return view('poke');
+});
+
+Route::get('/etc', function () {
+    return view('etc');
+});

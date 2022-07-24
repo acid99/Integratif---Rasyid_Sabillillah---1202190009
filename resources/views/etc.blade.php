@@ -1,3 +1,8 @@
+<?php
+$konten = file_get_contents("getPost.json");
+$data = json_decode($konten, true);
+?>
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <!--
 Template Name: Newserific
@@ -28,11 +33,11 @@ Licence URI: http://www.os-templates.com/template-terms
   <div id="topbar">
     <div id="topnav">
       <ul>
-        <li class="active"><a href="">Home</a></li>
+        <li><a href="/">Home</a></li>
         <li><a href="berita">Berita</a></li>
         <li><a href="market">Market</a></li>
         <li><a href="tech">Tech</a></li>
-        <li class="last"><a href="etc">Etc</a></li>
+        <li class="active"><a href="">Etc</a></li>
       </ul>
     </div>
     <div id="search">
@@ -51,33 +56,32 @@ Licence URI: http://www.os-templates.com/template-terms
 </div>
 <!-- ####################################################################################################### -->
 <div class="wrapper col4">
-    @if ($index->count())
         <div id="container">
             <div id="content">
             <div id="featured_post">
-                <h1><p align="center"><a href="{{$index[224]->source_url}}">{{$index[224]->title}}</a></p></h1>
-                <img src="{{$index[224]->img_url}}" alt="">
-                <strong><p align="justify">{{$index[224]->description}} <a href="{{$index[224]->source_url}}">Continue Reading &raquo;</a></p></strong>
+                <h1><p align="center"><a href="<?php echo $data[0]["url"]; ?>"><?php echo $data[0]["title"]; ?></a></p></h1>
+                <img src="<?php echo $data[0]["img"]; ?>" alt="">
+                <strong><p align="justify"><?php echo $data[0]["description"]; ?> <a href="<?php echo $data[0]["url"]; ?>">Continue Reading &raquo;</a></p></strong>
             </div>
             <div id="hpage_latest">
             <div id="featured_post">
-                <h1><p align="center"><a href="{{$index[170]->source_url}}">{{$index[170]->title}}</a></p></h1>
-                <img src="{{$index[170]->img_url}}" alt="">
-                <strong><p align="justify">{{$index[170]->description}} <a href="{{$index[170]->source_url}}">Continue Reading &raquo;</a></p></strong>
+                <h1><p align="center"><a href="<?php echo $data[50]["url"]; ?>"><?php echo $data[50]["title"]; ?></a></p></h1>
+                <img src="<?php echo $data[50]["img"]; ?>" alt="">
+                <strong><p align="justify"><?php echo substr($data[50]["description"], 0, 250); ?> <a href="<?php echo $data[50]["url"]; ?>">Continue Reading &raquo;</a></p></strong>
             </div>
             <div id="featured_post">
-                <h1><p align="center"><a href="{{$index[8]->source_url}}">{{$index[8]->title}}</a></p></h1>
-                <img src="{{$index[8]->img_url}}" alt="">
-                <strong><p align="justify">{{$index[8]->description}} <a href="{{$index[8]->source_url}}">Continue Reading &raquo;</a></p></strong>
+                <h1><p align="center"><a href="<?php echo $data[27]["url"]; ?>"><?php echo $data[27]["title"]; ?></a></p></h1>
+                <img src="<?php echo $data[27]["img"]; ?>" alt="">
+                <strong><p align="justify"><?php echo substr($data[27]["description"], 0, 250)?> <a href="<?php echo $data[27]["url"]; ?>">Continue Reading &raquo;</a></p></strong>
             </div>
             <div id="featured_post">
-                <h1><p align="center"><a href="{{$index[171]->source_url}}">{{$index[171]->title}}</a></p></h1>
-                <img src="{{$index[171]->img_url}}" alt="">
-                <strong><p align="justify">{{$index[171]->description}} <a href="{{$index[171]->source_url}}">Continue Reading &raquo;</a></p></strong>
+                <h1><p align="center"><a href="<?php echo $data[58]["url"]; ?>"><?php echo $data[58]["title"]; ?></a></p></h1>
+                <img src="<?php echo $data[58]["img"]; ?>" alt="">
+                <strong><p align="justify"><?php echo substr($data[58]["description"], 0, 256)?><a href="<?php echo $data[58]["url"]; ?>">Continue Reading &raquo;</a></p></strong>
             </div>
             </div>
             </div>
-    @endif
+
     <div id="column">
     <div class="mb-5" id="pokemon-content"></div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.0.0-alpha.1/axios.min.js" integrity="sha512-xIPqqrfvUAc/Cspuj7Bq0UtHNo/5qkdyngx6Vwt+tmbvTLDszzXM0G6c91LXmGrRx8KEPulT+AfOOez+TeVylg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -119,25 +123,23 @@ Licence URI: http://www.os-templates.com/template-terms
         }
         
     </script>
-    @if ($index->count())
       <ul id="latestnews">
-        <li><img src="{{$index[1]->img_url}}" alt=""width ="290" height="200">
-          <p><strong><a href="{{$index[1]->source_url}}">{{$index[1]->title}}</a></strong>{{$index[1]->description}}</p>
+        <li><img src="<?php echo $data[1]["img"]; ?>" alt="" width ="290" height="200">
+          <p><strong><a href="<?php echo $data[1]["url"]; ?>"><?php echo $data[1]["title"]; ?></a></strong><?php echo substr($data[1]["description"], 0, 258); ?></p>
         </li>
-        <li><img src="{{$index[210]->img_url}}" alt=""width ="290" height="200">
-          <p><strong><a href="{{$index[210]->source_url}}">{{$index[210]->title}}</a></strong>{{$index[210]->description}}</p>
+        <li><img src="<?php echo $data[55]["img"]; ?>" alt="" width ="290" height="200">
+          <p><strong><a href="<?php echo $data[55]["url"]; ?>"><?php echo $data[55]["title"]; ?></a></strong><?php echo substr($data[55]["description"], 0, 263); ?></p>
         </li>
-        <li><img src="{{$index[211]->img_url}}" alt=""width ="290" height="200">
-          <p><strong><a href="{{$index[211]->source_url}}">{{$index[211]->title}}</a></strong>{{$index[211]->description}}</p>
+        <li><img src="<?php echo $data[25]["img"]; ?>" alt="" width ="290" height="200">
+          <p><strong><a href="<?php echo $data[25]["url"]; ?>"><?php echo $data[25]["title"]; ?></a></strong><?php echo substr($data[25]["description"], 0, 266); ?></p>
         </li>
-        <li><img src="{{$index[159]->img_url}}" alt=""width ="290" height="200">
-          <p><strong><a href="{{$index[159]->source_url}}">{{$index[159]->title}}</a></strong>{{$index[159]->description}}</p>
+        <li><img src="<?php echo $data[31]["img"]; ?>" alt="" width ="290" height="200">
+          <p><strong><a href="<?php echo $data[31]["url"]; ?>"><?php echo $data[31]["title"]; ?></a></strong><?php echo substr($data[31]["description"], 0, 188); ?></p>
         </li>
-        <li class="last"><img src="{{$index[158]->img_url}}" alt=""width ="290" height="200">
-          <p><strong><a href="{{$index[158]->source_url}}">{{$index[158]->title}}</a></strong>{{$index[158]->description}}</p>
+        <li><img src="<?php echo $data[19]["img"]; ?>" alt="" width ="290" height="200">
+          <p><strong><a href="<?php echo $data[19]["url"]; ?>"><?php echo $data[19]["title"]; ?></a></strong><?php echo substr($data[19]["description"], 0, 266); ?></p>
         </li>
       </ul>
-    @endif
     </div>
     <br class="clear" />
   </div>

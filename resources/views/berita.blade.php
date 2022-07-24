@@ -31,15 +31,18 @@ Licence URI: http://www.os-templates.com/template-terms
         <li><a href="/">Home</a></li>
         <li class="active"><a href="">Berita</a></li>
         <li><a href="market">Market</a></li>
-        <li class="last"><a href="tech">Tech</a></li>
+        <li><a href="tech">Tech</a></li>
+        <li class="last"><a href="etc">Etc</a></li>
       </ul>
     </div>
     <div id="search">
-      <form action="berita" method="post">
+        <form class="row g-2 mt-5 " id="pokemon-form" >
         <fieldset>
           <legend>Site Search</legend>
-          <input type="text" value="Search Our Website&hellip;"  onfocus="this.value=(this.value=='Search Our Website&hellip;')? '' : this.value ;" />
-          <input type="submit" name="go" id="go" value="Search" />
+          <div class="col-auto">
+          <input type="text" class="form-control" name="pokemon" placeholder="Cari Pokemon">
+          <div class="col-auto">
+          <button type="submit" class="btn btn-primary mb-3">Search</button>
         </fieldset>
       </form>
     </div>
@@ -76,18 +79,58 @@ Licence URI: http://www.os-templates.com/template-terms
             </div>
     @endif
     <div id="column">
+    <div class="mb-5" id="pokemon-content"></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.0.0-alpha.1/axios.min.js" integrity="sha512-xIPqqrfvUAc/Cspuj7Bq0UtHNo/5qkdyngx6Vwt+tmbvTLDszzXM0G6c91LXmGrRx8KEPulT+AfOOez+TeVylg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        const form = document.querySelector("#pokemon-form");
+        const pokemonContent= document.querySelector("#pokemon-content")
+        const BASE_URI = `https://pokeapi.co/api/v2/pokemon/`;
+        form.addEventListener('submit', SearchPokemon);
+        function SearchPokemon (e) {
+            if(pokemonContent.hasChildNodes()){
+                pokemonContent.removeChild(pokemonContent.firstChild)
+            }
+            e.preventDefault()
+            let pokemonName = form.pokemon.value.toLowerCase();
+            axios.get(`${BASE_URI}${pokemonName}`)
+            .then(function (response) {
+                let data = response.data
+                const contentHTML = 
+                `<div class="p-4">
+                  <div>
+                      <center><img  style="width: 200px" src="${data.sprites.front_default}">
+                      <center><img  style="width: 200px" src="${data.sprites.back_default}">
+                  </div>
+                  <h3 style="text-align: center; margin-bottom: 20px">Pokemon ${data.name}</h3>
+                  <div>
+                      <ul style="font-size: 18px">
+                          <li>${data.abilities[0].ability.name}</li>
+                          <li>${data.abilities[1].ability.name}</li>
+                      </ul>
+                  </div>
+                </div>`
+            console.log(data.abilities[1].ability.name);
+                pokemonContent.innerHTML += contentHTML;
+            })
+            .catch(function (error) {
+                // handle error
+                alert("Pokemon Not found")
+            });
+        }
+        
+    </script>
     @if ($index->count())
       <ul id="latestnews">
-        <li><img src="{{$index[1]->img_url}}" alt="">
+        <li><img src="{{$index[1]->img_url}}" alt="" width ="290" height="200">
           <p><strong><a href="{{$index[1]->source_url}}">{{$index[1]->title}}</a></strong>{{$index[1]->description}}</p>
         </li>
-        <li><img src="{{$index[2]->img_url}}" alt="">
+        <li><img src="{{$index[2]->img_url}}" alt="" width ="290" height="200">
           <p><strong><a href="{{$index[2]->source_url}}">{{$index[2]->title}}</a></strong>{{$index[2]->description}}</p>
         </li>
-        <li><img src="{{$index[3]->img_url}}" alt="">
+        <li><img src="{{$index[3]->img_url}}" alt="" width ="290" height="200">
           <p><strong><a href="{{$index[3]->source_url}}">{{$index[3]->title}}</a></strong>{{$index[3]->description}}</p>
         </li>
-        <li><img src="{{$index[4]->img_url}}" alt="">
+        <li><img src="{{$index[4]->img_url}}" alt="" width ="290" height="200">
           <p><strong><a href="{{$index[4]->source_url}}">{{$index[4]->title}}</a></strong>{{$index[4]->description}}</p>
         </li>
       </ul>
