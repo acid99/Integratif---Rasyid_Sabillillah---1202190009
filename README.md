@@ -188,5 +188,5 @@
 
   ## Last Phase  | Json from Friend
 
-- Friend RSS(1,2,3 or mix) news page view (get from json friend)
+- News page from RSS(1,2,3 or mix) from json friend and pokemon "venusaur" from poke api
   <p align="center"><img src= "https://github.com/acid99/Integratif--Rasyid_Sabillillah--1202190009-/blob/main/assets/last%20progress/Screenshot_1.png?raw=true?raw=true"></p>  
