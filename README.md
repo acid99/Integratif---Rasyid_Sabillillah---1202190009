@@ -175,7 +175,7 @@
 - Search pokemon name "squirtle"
   <p align="center"><img src= "https://github.com/acid99/Integratif--Rasyid_Sabillillah--1202190009-/blob/main/assets/progress%204/Screenshot_2.png?raw=true?raw=true"></p>
 
-  ## Phase 5  | Database to Json
+## Phase 5  | Database to Json
 
 - Create files in app/Http/Controllers, with name JsonController.php (contains about database to json).
   <p align="center"><img src= "https://github.com/acid99/Integratif--Rasyid_Sabillillah--1202190009-/blob/main/assets/progress%205/Screenshot_2.png?raw=true?raw=true"></p>
@@ -186,7 +186,7 @@
 - Database to json, and give it to friend.
   <p align="center"><img src= "https://github.com/acid99/Integratif--Rasyid_Sabillillah--1202190009-/blob/main/assets/progress%205/Screenshot_1.png?raw=true?raw=true"></p>  
 
-  ## Last Phase  | Json from Friend
+## Last Phase  | Json from Friend
 
 - News page from RSS(1,2,3 or mix) from json friend and pokemon "venusaur" from poke api
   <p align="center"><img src= "https://github.com/acid99/Integratif--Rasyid_Sabillillah--1202190009-/blob/main/assets/last%20progress/Screenshot_1.png?raw=true?raw=true"></p>  
